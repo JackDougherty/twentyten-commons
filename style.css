@@ -1,0 +1,43 @@
+/*
+Theme Name: Twenty Ten - child theme - Commons
+Description: Child theme of Twenty Ten for Commons.trincoll.edu
+Author: Jack Dougherty
+Author URI: http://commons.trincoll.edu/jackdougherty
+Template: twentyten
+Version: 2012-07-18
+*/
+
+@import url("../twentyten/style.css");
+
+
+
+/* modified site-title and description (tagline) that appears in header.php*/
+#site-title {
+line-height: 36px;
+margin: 0 0 5px 0;
+width: 700px;
+}
+
+#site-description {
+    margin: 0px 0 5px;
+    width: 940px;
+	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/*modified font and space for jQuery Vertical Accordion Menu plugin in widget */
+body, input, textarea {
+font-size: 13px;
+}
+
+#primary, #secondary {
+width: 240px;
+}
+
+/* modified font for SimpleFootnotes display*/
+.entry-content sup,
+.entry-content sub {
+	font-size: 14px;
+}
+
