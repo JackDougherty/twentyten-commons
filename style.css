@@ -4,7 +4,7 @@ Description: Child theme of Twenty Ten for Commons.trincoll.edu
 Author: Jack Dougherty
 Author URI: http://commons.trincoll.edu/jackdougherty
 Template: twentyten
-Version: 2012-07-18
+Version: 2012-08-11
 */
 
 @import url("../twentyten/style.css");
@@ -27,8 +27,9 @@ width: 700px;
 }
 
 /*modified font and space for jQuery Vertical Accordion Menu plugin in widget */
-body, input, textarea {
+.widget-area ul {
 font-size: 13px;
+font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
 #primary, #secondary {
