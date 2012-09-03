@@ -4,14 +4,14 @@ Description: Child theme of Twenty Ten for Commons.trincoll.edu
 Author: Jack Dougherty
 Author URI: http://commons.trincoll.edu/jackdougherty
 Template: twentyten
-Version: 2012-09-01
+Version: 2012-09-03
 */
 
 @import url("../twentyten/style.css");
 
 
 
-/* modified site-title and description (tagline) that appears in header.php*/
+/* modified site-title, description (tagline), and image border that appears in header.php*/
 #site-title {
 line-height: 36px;
 margin: 0 0 5px 0;
@@ -24,6 +24,10 @@ width: 700px;
 	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
     font-size: 14px;
     line-height: 16px;
+}
+
+#branding img {
+  border-top-width:1px;
 }
 
 /*modified font and space for jQuery Vertical Accordion Menu plugin in widget */
