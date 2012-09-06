@@ -14,28 +14,22 @@
  * @since Twenty Ten 1.2
  */
 ?>
-
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<?php if ( is_front_page() ) { ?>
 						<h2 class="entry-title"><?php the_title(); ?></h2>
 					<?php } else { ?>
 						<h1 class="entry-title"><?php the_title(); ?></h1>
 					<?php } ?> 
-
 <!--refers to published_on child theme function inserted by Jack Dougherty, Trinity College -->
 				<div class="entry-meta">
 						<?php twentyten_published_on(); ?>
 					</div><!-- .entry-meta -->
-
 					<div class="entry-content">
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-## -->
-
 				<?php comments_template( '', true ); ?>
-
 <?php endwhile; // end of the loop. ?>
