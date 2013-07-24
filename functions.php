@@ -20,7 +20,7 @@ function twentyten_published_on() {
 	);
 }
 endif;
-?>
+
 if ( ! function_exists( 'twentyten_posted_on' ) ) :
 /**
  * Integrate Co-Authors Plus with TwentyTen by replacing twentyten_posted_on() with this function
@@ -53,3 +53,4 @@ function twentyten_posted_on() {
     endif;
 }
 endif;
+?>
