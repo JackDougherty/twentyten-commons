@@ -53,4 +53,12 @@ function twentyten_posted_on() {
     endif;
 }
 endif;
+
+//Jack added make_clickable function to automatically transform all links outside of shortcodes, based on http://blog.robbychen.com/wordpress-make_clickable/
+function mc_ignore_shortcode($content) {
+    $content = do_shortcode($content);
+    return make_clickable($content);
+}
+ 
+add_filter( 'the_content', 'mc_ignore_shortcode' );
 ?>
