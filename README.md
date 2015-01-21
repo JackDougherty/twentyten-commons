@@ -1,6 +1,8 @@
 # twentyten-commons
 WP child theme of Twenty Ten for http://commons.trincoll.edu 
+
 by http://commons.trincoll.edu/jackdougherty
+
 code available at https://github.com/JackDougherty/twentyten-commons
 
 Features:
